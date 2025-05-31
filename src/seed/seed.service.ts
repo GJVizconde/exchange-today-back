@@ -77,9 +77,13 @@ export class SeedService {
   private refreshDate() {
     const date = new Date();
 
-    const formatted = format(date, 'EEEE, dd/MM/yyyy hh:mm a', { locale: es });
-    const capitalized = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+    // const formatted = format(date, 'EEEE, dd/MM/yyyy hh:mm a', { locale: es });
+    // const capitalized = formatted.charAt(0).toUpperCase() + formatted.slice(1);
 
-    return capitalized;
+    // console.log(capitalized);
+
+    // return capitalized;
+
+    return date.toISOString();
   }
 }
