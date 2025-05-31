@@ -7,6 +7,10 @@ async function bootstrap() {
 
   const logger = new Logger('Bootstrap');
 
+  app.enableCors({
+    origin: '*',
+  });
+
   const PORT = process.env.PORT ?? 3000;
 
   app.setGlobalPrefix('api');
